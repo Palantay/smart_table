@@ -1,0 +1,74 @@
+.smart-table {
+    margin: auto;
+    margin-bottom: 20px;
+    font-size: 14px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.smart-table__title,
+.smart-table__cell {
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    border-color: white;
+    padding: 10px 20px;
+}
+.smart-table__cell {
+    background: #D8E6F3;
+}
+
+.smart-table__title {
+    position: relative;
+    z-index: -1;
+    padding-right: 40px;
+    background: #AFCDE7;
+    color: white;
+    cursor: pointer;
+    transition: background-color .2s, .2s;
+}
+
+.smart-table__title::after,
+.smart-table__title::before {
+    content: "";
+    position: absolute;
+    top: 21px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-left-width: 6px;
+    border-right-width: 6px;
+    border-top: 12px solid white;
+    transition: background-color .2s, .2s;
+}
+
+.smart-table__title::before {
+    top: 5px;
+    border: 0 solid transparent;
+    border-right-width: 6px;
+    border-left-width: 6px;
+    border-bottom: 12px solid white;
+}
+
+.smart-table__title.desc::before{
+    border-bottom: 12px solid black;
+    transition: background-color .2s, .2s;
+}
+
+.smart-table__title.asc::after{
+    border-top: 12px solid black;
+}
+
+.smart-table__title:hover,
+.smart-table__title:focus {
+    background: #B6AFE7;
+    transition: background-color .2s, .2s;
+}
+
+
+
+
+
+
+
+

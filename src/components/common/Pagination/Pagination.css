@@ -1,0 +1,24 @@
+.pagination {
+    display: flex;
+    margin: auto;
+
+}
+
+.pagination__item {
+    border: 1px solid white;
+    padding: 5px 10px;
+    margin-left: 10px;
+    background: #D8E6F3;
+    transition: background-color .2s, .2s;
+    text-decoration: none;
+    cursor: pointer;
+    
+    
+}
+
+.pagination__item:hover,
+.pagination__item:focus,
+.pagination__item:active {
+    transition: background-color .2s, .2s;
+    background: #B6AFE7;
+}
